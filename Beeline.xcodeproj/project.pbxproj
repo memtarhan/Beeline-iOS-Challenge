@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82F2BCA04C45F04CAA9AB85F /* Pods_Beeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */; };
+		9EC2C54FEBA8B9A09A7327C7 /* Pods_Beeline_BeelineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */; };
+		D03B3968E5955173E4540DCC /* Pods_BeelineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */; };
 		DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */; };
-		DB4EF4D824FEF1790041EDEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D724FEF1790041EDEF /* SceneDelegate.swift */; };
 		DB4EF4DA24FEF1790041EDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D924FEF1790041EDEF /* ViewController.swift */; };
 		DB4EF4DD24FEF1790041EDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4DB24FEF1790041EDEF /* Main.storyboard */; };
 		DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */; };
 		DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4E024FEF17D0041EDEF /* LaunchScreen.storyboard */; };
 		DB4EF4ED24FEF17D0041EDEF /* BeelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4EC24FEF17D0041EDEF /* BeelineTests.swift */; };
 		DB4EF4F824FEF17D0041EDEF /* BeelineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4F724FEF17D0041EDEF /* BeelineUITests.swift */; };
+		DBBD008D2516312000074789 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00862516312000074789 /* HomePresenter.swift */; };
+		DBBD008E2516312000074789 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00872516312000074789 /* HomeRouter.swift */; };
+		DBBD008F2516312000074789 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00882516312000074789 /* HomeViewController.swift */; };
+		DBBD00902516312000074789 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00892516312000074789 /* HomeInteractor.swift */; };
+		DBBD00912516312000074789 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD008A2516312000074789 /* HomeEntity.swift */; };
+		DBBD00922516312000074789 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBD008B2516312000074789 /* HomeViewController.xib */; };
+		DBBD00932516312000074789 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD008C2516312000074789 /* HomeService.swift */; };
+		DBBD00992516314400074789 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00982516314400074789 /* HomeAssembly.swift */; };
+		DBBD00A82516317400074789 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00A72516317400074789 /* ViewControllerAssembly.swift */; };
+		DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00AD251631A600074789 /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B75DC308AD3255DF293182F /* Pods-Beeline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeline.debug.xcconfig"; path = "Target Support Files/Pods-Beeline/Pods-Beeline.debug.xcconfig"; sourceTree = "<group>"; };
+		236258606CE552698E9FF292 /* Pods-BeelineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelineTests.debug.xcconfig"; path = "Target Support Files/Pods-BeelineTests/Pods-BeelineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		291CF1C8FA94F7EA360B9065 /* Pods-Beeline-BeelineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeline-BeelineUITests.release.xcconfig"; path = "Target Support Files/Pods-Beeline-BeelineUITests/Pods-Beeline-BeelineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33C8D68E157422E627987E1F /* Pods-Beeline-BeelineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeline-BeelineUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beeline-BeelineUITests/Pods-Beeline-BeelineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43856969268D65E0E79B7476 /* Pods-BeelineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelineTests.release.xcconfig"; path = "Target Support Files/Pods-BeelineTests/Pods-BeelineTests.release.xcconfig"; sourceTree = "<group>"; };
+		6321888D8D6ED847ED216439 /* Pods-Beeline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeline.release.xcconfig"; path = "Target Support Files/Pods-Beeline/Pods-Beeline.release.xcconfig"; sourceTree = "<group>"; };
+		927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeelineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4D224FEF1790041EDEF /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB4EF4D724FEF1790041EDEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB4EF4D924FEF1790041EDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB4EF4DC24FEF1790041EDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +67,18 @@
 		DB4EF4F324FEF17D0041EDEF /* BeelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeelineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4F724FEF17D0041EDEF /* BeelineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeelineUITests.swift; sourceTree = "<group>"; };
 		DB4EF4F924FEF17D0041EDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBBD00862516312000074789 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DBBD00872516312000074789 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		DBBD00882516312000074789 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBBD00892516312000074789 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DBBD008A2516312000074789 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		DBBD008B2516312000074789 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		DBBD008C2516312000074789 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		DBBD00982516314400074789 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		DBBD00A72516317400074789 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		DBBD00AD251631A600074789 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline_BeelineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F2BCA04C45F04CAA9AB85F /* Pods_Beeline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03B3968E5955173E4540DCC /* Pods_BeelineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC2C54FEBA8B9A09A7327C7 /* Pods_Beeline_BeelineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D33A512DC8710A2CA5403E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */,
+				F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */,
+				927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF155EE640F8DA14CEF869C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B75DC308AD3255DF293182F /* Pods-Beeline.debug.xcconfig */,
+				6321888D8D6ED847ED216439 /* Pods-Beeline.release.xcconfig */,
+				33C8D68E157422E627987E1F /* Pods-Beeline-BeelineUITests.debug.xcconfig */,
+				291CF1C8FA94F7EA360B9065 /* Pods-Beeline-BeelineUITests.release.xcconfig */,
+				236258606CE552698E9FF292 /* Pods-BeelineTests.debug.xcconfig */,
+				43856969268D65E0E79B7476 /* Pods-BeelineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB4EF4C924FEF1790041EDEF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				DB4EF4EB24FEF17D0041EDEF /* BeelineTests */,
 				DB4EF4F624FEF17D0041EDEF /* BeelineUITests */,
 				DB4EF4D324FEF1790041EDEF /* Products */,
+				CBF155EE640F8DA14CEF869C /* Pods */,
+				65D33A512DC8710A2CA5403E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +157,10 @@
 		DB4EF4D424FEF1790041EDEF /* Beeline */ = {
 			isa = PBXGroup;
 			children = (
+				DBBD00842516310500074789 /* DI */,
+				DBBD0083251630FB00074789 /* Scenes */,
+				DBBD00AC2516319100074789 /* Common */,
 				DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */,
-				DB4EF4D724FEF1790041EDEF /* SceneDelegate.swift */,
 				DB4EF4D924FEF1790041EDEF /* ViewController.swift */,
 				DB4EF4DB24FEF1790041EDEF /* Main.storyboard */,
 				DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */,
@@ -128,6 +188,61 @@
 			path = BeelineUITests;
 			sourceTree = "<group>";
 		};
+		DBBD0083251630FB00074789 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD00852516311200074789 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DBBD00842516310500074789 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD00A62516316900074789 /* Common */,
+				DBBD00972516313600074789 /* Scenes */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		DBBD00852516311200074789 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD008A2516312000074789 /* HomeEntity.swift */,
+				DBBD00892516312000074789 /* HomeInteractor.swift */,
+				DBBD00862516312000074789 /* HomePresenter.swift */,
+				DBBD00872516312000074789 /* HomeRouter.swift */,
+				DBBD008C2516312000074789 /* HomeService.swift */,
+				DBBD00882516312000074789 /* HomeViewController.swift */,
+				DBBD008B2516312000074789 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DBBD00972516313600074789 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD00982516314400074789 /* HomeAssembly.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DBBD00A62516316900074789 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD00A72516317400074789 /* ViewControllerAssembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DBBD00AC2516319100074789 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD00AD251631A600074789 /* ViewControllerFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB4EF4FC24FEF17D0041EDEF /* Build configuration list for PBXNativeTarget "Beeline" */;
 			buildPhases = (
+				F89D2EF4DCC561F8D97294D0 /* [CP] Check Pods Manifest.lock */,
 				DB4EF4CE24FEF1790041EDEF /* Sources */,
 				DB4EF4CF24FEF1790041EDEF /* Frameworks */,
 				DB4EF4D024FEF1790041EDEF /* Resources */,
+				A85C3ACE08D295978593F44A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB4EF4FF24FEF17D0041EDEF /* Build configuration list for PBXNativeTarget "BeelineTests" */;
 			buildPhases = (
+				ECFA3296372F33E3409995B8 /* [CP] Check Pods Manifest.lock */,
 				DB4EF4E424FEF17D0041EDEF /* Sources */,
 				DB4EF4E524FEF17D0041EDEF /* Frameworks */,
 				DB4EF4E624FEF17D0041EDEF /* Resources */,
@@ -170,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB4EF50224FEF17D0041EDEF /* Build configuration list for PBXNativeTarget "BeelineUITests" */;
 			buildPhases = (
+				11363803F51ABD647BF8B14B /* [CP] Check Pods Manifest.lock */,
 				DB4EF4EF24FEF17D0041EDEF /* Sources */,
 				DB4EF4F024FEF17D0041EDEF /* Frameworks */,
 				DB4EF4F124FEF17D0041EDEF /* Resources */,
+				C52170D800B07CDA46B5B096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +355,7 @@
 				DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */,
 				DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */,
 				DB4EF4DD24FEF1790041EDEF /* Main.storyboard in Resources */,
+				DBBD00922516312000074789 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +375,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11363803F51ABD647BF8B14B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beeline-BeelineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85C3ACE08D295978593F44A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beeline/Pods-Beeline-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beeline/Pods-Beeline-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beeline/Pods-Beeline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52170D800B07CDA46B5B096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beeline-BeelineUITests/Pods-Beeline-BeelineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beeline-BeelineUITests/Pods-Beeline-BeelineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beeline-BeelineUITests/Pods-Beeline-BeelineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFA3296372F33E3409995B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeelineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89D2EF4DCC561F8D97294D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beeline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB4EF4CE24FEF1790041EDEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DB4EF4DA24FEF1790041EDEF /* ViewController.swift in Sources */,
+				DBBD00912516312000074789 /* HomeEntity.swift in Sources */,
+				DBBD00992516314400074789 /* HomeAssembly.swift in Sources */,
 				DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */,
-				DB4EF4D824FEF1790041EDEF /* SceneDelegate.swift in Sources */,
+				DBBD008D2516312000074789 /* HomePresenter.swift in Sources */,
+				DBBD008E2516312000074789 /* HomeRouter.swift in Sources */,
+				DBBD00932516312000074789 /* HomeService.swift in Sources */,
+				DBBD008F2516312000074789 /* HomeViewController.swift in Sources */,
+				DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */,
+				DBBD00902516312000074789 /* HomeInteractor.swift in Sources */,
+				DBBD00A82516317400074789 /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +664,7 @@
 		};
 		DB4EF4FD24FEF17D0041EDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B75DC308AD3255DF293182F /* Pods-Beeline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +683,7 @@
 		};
 		DB4EF4FE24FEF17D0041EDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6321888D8D6ED847ED216439 /* Pods-Beeline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +702,7 @@
 		};
 		DB4EF50024FEF17D0041EDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236258606CE552698E9FF292 /* Pods-BeelineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +725,7 @@
 		};
 		DB4EF50124FEF17D0041EDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43856969268D65E0E79B7476 /* Pods-BeelineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +748,7 @@
 		};
 		DB4EF50324FEF17D0041EDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C8D68E157422E627987E1F /* Pods-Beeline-BeelineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +769,7 @@
 		};
 		DB4EF50424FEF17D0041EDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291CF1C8FA94F7EA360B9065 /* Pods-Beeline-BeelineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
