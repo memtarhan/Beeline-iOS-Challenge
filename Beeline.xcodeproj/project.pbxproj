@@ -11,8 +11,6 @@
 		9EC2C54FEBA8B9A09A7327C7 /* Pods_Beeline_BeelineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */; };
 		D03B3968E5955173E4540DCC /* Pods_BeelineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */; };
 		DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */; };
-		DB4EF4DA24FEF1790041EDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D924FEF1790041EDEF /* ViewController.swift */; };
-		DB4EF4DD24FEF1790041EDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4DB24FEF1790041EDEF /* Main.storyboard */; };
 		DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */; };
 		DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4E024FEF17D0041EDEF /* LaunchScreen.storyboard */; };
 		DB4EF4ED24FEF17D0041EDEF /* BeelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4EC24FEF17D0041EDEF /* BeelineTests.swift */; };
@@ -27,6 +25,8 @@
 		DBBD00992516314400074789 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00982516314400074789 /* HomeAssembly.swift */; };
 		DBBD00A82516317400074789 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00A72516317400074789 /* ViewControllerAssembly.swift */; };
 		DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00AD251631A600074789 /* ViewControllerFactory.swift */; };
+		DBBD00BF2516367C00074789 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00BE2516367C00074789 /* CardView.swift */; };
+		DBBD00C42516383200074789 /* CardBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00C32516383200074789 /* CardBlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,6 @@
 		927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeelineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4D224FEF1790041EDEF /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB4EF4D924FEF1790041EDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB4EF4DC24FEF1790041EDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4EF4E124FEF17D0041EDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB4EF4E324FEF17D0041EDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +75,8 @@
 		DBBD00982516314400074789 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		DBBD00A72516317400074789 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		DBBD00AD251631A600074789 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		DBBD00BE2516367C00074789 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DBBD00C32516383200074789 /* CardBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlurView.swift; sourceTree = "<group>"; };
 		EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline_BeelineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,8 +161,6 @@
 				DBBD0083251630FB00074789 /* Scenes */,
 				DBBD00AC2516319100074789 /* Common */,
 				DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */,
-				DB4EF4D924FEF1790041EDEF /* ViewController.swift */,
-				DB4EF4DB24FEF1790041EDEF /* Main.storyboard */,
 				DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */,
 				DB4EF4E024FEF17D0041EDEF /* LaunchScreen.storyboard */,
 				DB4EF4E324FEF17D0041EDEF /* Info.plist */,
@@ -239,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				DBBD00AD251631A600074789 /* ViewControllerFactory.swift */,
+				DBBD00BE2516367C00074789 /* CardView.swift */,
+				DBBD00C32516383200074789 /* CardBlurView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -354,7 +354,6 @@
 			files = (
 				DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */,
 				DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */,
-				DB4EF4DD24FEF1790041EDEF /* Main.storyboard in Resources */,
 				DBBD00922516312000074789 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,16 +482,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4EF4DA24FEF1790041EDEF /* ViewController.swift in Sources */,
 				DBBD00912516312000074789 /* HomeEntity.swift in Sources */,
 				DBBD00992516314400074789 /* HomeAssembly.swift in Sources */,
 				DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */,
+				DBBD00C42516383200074789 /* CardBlurView.swift in Sources */,
 				DBBD008D2516312000074789 /* HomePresenter.swift in Sources */,
 				DBBD008E2516312000074789 /* HomeRouter.swift in Sources */,
 				DBBD00932516312000074789 /* HomeService.swift in Sources */,
 				DBBD008F2516312000074789 /* HomeViewController.swift in Sources */,
 				DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */,
 				DBBD00902516312000074789 /* HomeInteractor.swift in Sources */,
+				DBBD00BF2516367C00074789 /* CardView.swift in Sources */,
 				DBBD00A82516317400074789 /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,14 +529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB4EF4DB24FEF1790041EDEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB4EF4DC24FEF1790041EDEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB4EF4E024FEF17D0041EDEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -670,6 +662,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L9L899V66;
 				INFOPLIST_FILE = Beeline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -689,6 +682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L9L899V66;
 				INFOPLIST_FILE = Beeline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

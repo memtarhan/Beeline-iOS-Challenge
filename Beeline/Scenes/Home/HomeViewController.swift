@@ -6,6 +6,8 @@
 //  Copyright © 2020 Mehmet Tarhan. All rights reserved.
 //
 
+import CoreLocation
+import MapKit
 import UIKit
 
 protocol HomeViewController: class {
@@ -14,6 +16,18 @@ protocol HomeViewController: class {
 
 class HomeViewControllerImpl: UIViewController {
     var presenter: HomePresenter?
+
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var blurView: CardBlurView!
+
+    @IBOutlet var blurViewBottomConstraint: NSLayoutConstraint!
+
+    private let locationManager: CLLocationManager = {
+        let manager = CLLocationManager()
+        // manager.allowsBackgroundLocationUpdates = true
+
+        return manager
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +38,18 @@ class HomeViewControllerImpl: UIViewController {
         super.viewWillAppear(animated)
         localize()
     }
-    
-    private func setup() {
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        blurView.layer.cornerRadius = blurView.frame.height / 12
+        blurViewBottomConstraint.constant = 96 - blurView.frame.height
     }
-    
+
+    private func setup() {
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+    }
+
     private func localize() {
     }
 }
@@ -37,3 +59,7 @@ class HomeViewControllerImpl: UIViewController {
 extension HomeViewControllerImpl: HomeViewController {
 }
 
+// MARK: - CLLocationManagerDelegate
+
+extension HomeViewControllerImpl: CLLocationManagerDelegate {
+}
