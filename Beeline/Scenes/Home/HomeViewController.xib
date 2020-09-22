@@ -11,8 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewControllerImpl" customModule="Beeline" customModuleProvider="target">
             <connections>
-                <outlet property="blurView" destination="Zmd-Jt-f11" id="4i4-42-gx7"/>
-                <outlet property="blurViewBottomConstraint" destination="IKu-GD-Ks1" id="t7X-vI-ifT"/>
                 <outlet property="mapView" destination="asT-TE-aSs" id="1aS-WO-vnX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,28 +23,13 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asT-TE-aSs">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </mapView>
-                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-Jt-f11">
-                    <rect key="frame" x="0.0" y="482" width="414" height="414"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FYh-J0-y4A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="Zmd-Jt-f11" secondAttribute="height" multiplier="1:1" id="g7c-8i-M7k"/>
-                    </constraints>
-                    <blurEffect style="regular"/>
-                </visualEffectView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="asT-TE-aSs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ANj-7A-NHJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="asT-TE-aSs" secondAttribute="trailing" id="H64-qp-VFs"/>
-                <constraint firstAttribute="bottom" secondItem="Zmd-Jt-f11" secondAttribute="bottom" id="IKu-GD-Ks1"/>
-                <constraint firstItem="Zmd-Jt-f11" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XjJ-pV-Zjr"/>
                 <constraint firstItem="asT-TE-aSs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iiL-30-HPK"/>
-                <constraint firstItem="Zmd-Jt-f11" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lnc-Zx-pJw"/>
                 <constraint firstAttribute="bottom" secondItem="asT-TE-aSs" secondAttribute="bottom" id="sZj-f5-XlD"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>

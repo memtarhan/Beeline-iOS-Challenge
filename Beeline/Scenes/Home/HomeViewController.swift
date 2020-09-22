@@ -18,9 +18,6 @@ class HomeViewControllerImpl: UIViewController {
     var presenter: HomePresenter?
 
     @IBOutlet var mapView: MKMapView!
-    @IBOutlet var blurView: CardBlurView!
-
-    @IBOutlet var blurViewBottomConstraint: NSLayoutConstraint!
 
     private let locationManager: CLLocationManager = {
         let manager = CLLocationManager()
@@ -41,11 +38,14 @@ class HomeViewControllerImpl: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        blurView.layer.cornerRadius = blurView.frame.height / 12
-        blurViewBottomConstraint.constant = 96 - blurView.frame.height
     }
 
     private func setup() {
+        let blurEffect = UIBlurEffect(style: .prominent) // here you can change blur style
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = tabBarController?.tabBar.bounds ?? CGRect(x: 0, y: view.frame.height - 64, width: view.frame.width, height: 64)
+        blurView.autoresizingMask = .flexibleWidth
+        tabBarController?.tabBar.insertSubview(blurView, at: 0)
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
     }

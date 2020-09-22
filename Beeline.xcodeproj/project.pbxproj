@@ -10,6 +10,14 @@
 		82F2BCA04C45F04CAA9AB85F /* Pods_Beeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */; };
 		9EC2C54FEBA8B9A09A7327C7 /* Pods_Beeline_BeelineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */; };
 		D03B3968E5955173E4540DCC /* Pods_BeelineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */; };
+		DB4B51BE251A14EC00BA289D /* ActivitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51B7251A14EB00BA289D /* ActivitiesPresenter.swift */; };
+		DB4B51BF251A14EC00BA289D /* ActivitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51B8251A14EB00BA289D /* ActivitiesRouter.swift */; };
+		DB4B51C0251A14EC00BA289D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51B9251A14EB00BA289D /* ActivitiesViewController.swift */; };
+		DB4B51C1251A14EC00BA289D /* ActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51BA251A14EB00BA289D /* ActivitiesInteractor.swift */; };
+		DB4B51C2251A14EC00BA289D /* ActivitiesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51BB251A14EC00BA289D /* ActivitiesEntity.swift */; };
+		DB4B51C3251A14EC00BA289D /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4B51BC251A14EC00BA289D /* ActivitiesViewController.xib */; };
+		DB4B51C4251A14EC00BA289D /* ActivitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51BD251A14EC00BA289D /* ActivitiesService.swift */; };
+		DB4B51C9251A14FE00BA289D /* ActivitiesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B51C8251A14FE00BA289D /* ActivitiesAssembly.swift */; };
 		DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */; };
 		DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */; };
 		DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF4E024FEF17D0041EDEF /* LaunchScreen.storyboard */; };
@@ -54,6 +62,14 @@
 		43856969268D65E0E79B7476 /* Pods-BeelineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeelineTests.release.xcconfig"; path = "Target Support Files/Pods-BeelineTests/Pods-BeelineTests.release.xcconfig"; sourceTree = "<group>"; };
 		6321888D8D6ED847ED216439 /* Pods-Beeline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beeline.release.xcconfig"; path = "Target Support Files/Pods-Beeline/Pods-Beeline.release.xcconfig"; sourceTree = "<group>"; };
 		927E6F83BFC55B10CD232265 /* Pods_BeelineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeelineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4B51B7251A14EB00BA289D /* ActivitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesPresenter.swift; sourceTree = "<group>"; };
+		DB4B51B8251A14EB00BA289D /* ActivitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesRouter.swift; sourceTree = "<group>"; };
+		DB4B51B9251A14EB00BA289D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		DB4B51BA251A14EB00BA289D /* ActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesInteractor.swift; sourceTree = "<group>"; };
+		DB4B51BB251A14EC00BA289D /* ActivitiesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesEntity.swift; sourceTree = "<group>"; };
+		DB4B51BC251A14EC00BA289D /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
+		DB4B51BD251A14EC00BA289D /* ActivitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesService.swift; sourceTree = "<group>"; };
+		DB4B51C8251A14FE00BA289D /* ActivitiesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesAssembly.swift; sourceTree = "<group>"; };
 		DB4EF4D224FEF1790041EDEF /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +148,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB4B51B6251A14D700BA289D /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DB4B51BB251A14EC00BA289D /* ActivitiesEntity.swift */,
+				DB4B51BA251A14EB00BA289D /* ActivitiesInteractor.swift */,
+				DB4B51B7251A14EB00BA289D /* ActivitiesPresenter.swift */,
+				DB4B51B8251A14EB00BA289D /* ActivitiesRouter.swift */,
+				DB4B51BD251A14EC00BA289D /* ActivitiesService.swift */,
+				DB4B51B9251A14EB00BA289D /* ActivitiesViewController.swift */,
+				DB4B51BC251A14EC00BA289D /* ActivitiesViewController.xib */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
 		DB4EF4C924FEF1790041EDEF = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +219,7 @@
 		DBBD0083251630FB00074789 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DB4B51B6251A14D700BA289D /* Activities */,
 				DBBD00852516311200074789 /* Home */,
 			);
 			path = Scenes;
@@ -221,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				DBBD00982516314400074789 /* HomeAssembly.swift */,
+				DB4B51C8251A14FE00BA289D /* ActivitiesAssembly.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -353,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4EF4E224FEF17D0041EDEF /* LaunchScreen.storyboard in Resources */,
+				DB4B51C3251A14EC00BA289D /* ActivitiesViewController.xib in Resources */,
 				DB4EF4DF24FEF17D0041EDEF /* Assets.xcassets in Resources */,
 				DBBD00922516312000074789 /* HomeViewController.xib in Resources */,
 			);
@@ -482,17 +515,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4B51C4251A14EC00BA289D /* ActivitiesService.swift in Sources */,
 				DBBD00912516312000074789 /* HomeEntity.swift in Sources */,
 				DBBD00992516314400074789 /* HomeAssembly.swift in Sources */,
 				DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */,
+				DB4B51C9251A14FE00BA289D /* ActivitiesAssembly.swift in Sources */,
 				DBBD00C42516383200074789 /* CardBlurView.swift in Sources */,
 				DBBD008D2516312000074789 /* HomePresenter.swift in Sources */,
+				DB4B51C1251A14EC00BA289D /* ActivitiesInteractor.swift in Sources */,
+				DB4B51BF251A14EC00BA289D /* ActivitiesRouter.swift in Sources */,
 				DBBD008E2516312000074789 /* HomeRouter.swift in Sources */,
+				DB4B51C0251A14EC00BA289D /* ActivitiesViewController.swift in Sources */,
+				DB4B51BE251A14EC00BA289D /* ActivitiesPresenter.swift in Sources */,
 				DBBD00932516312000074789 /* HomeService.swift in Sources */,
 				DBBD008F2516312000074789 /* HomeViewController.swift in Sources */,
 				DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */,
 				DBBD00902516312000074789 /* HomeInteractor.swift in Sources */,
 				DBBD00BF2516367C00074789 /* CardView.swift in Sources */,
+				DB4B51C2251A14EC00BA289D /* ActivitiesEntity.swift in Sources */,
 				DBBD00A82516317400074789 /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
