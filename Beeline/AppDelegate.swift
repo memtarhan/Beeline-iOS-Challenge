@@ -54,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = UITabBarController()
         if let home = assembler?.resolver.resolve(HomeViewController.self) as? UIViewController,
             let activities = assembler?.resolver.resolve(ActivitiesViewController.self) as? UIViewController {
-            tabBarController.tabBar.barTintColor = UIColor(named: "Color0") ?? .black
             tabBarController.tabBar.layer.borderWidth = 0.5
             tabBarController.tabBar.layer.borderColor = UIColor.clear.cgColor
             tabBarController.tabBar.clipsToBounds = true
@@ -64,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let homeNavigationController = UINavigationController(rootViewController: home)
 
             /// - Trending
-            activities.tabBarItem = UITabBarItem(title: "Trending", image: UIImage(named: "Trending"), tag: 1)
+            activities.tabBarItem = UITabBarItem(title: "Actities", image: UIImage(named: "Actities"), tag: 1)
             let trendingNavigationController = UINavigationController(rootViewController: activities)
 
             tabBarController.setViewControllers([homeNavigationController, trendingNavigationController], animated: true)
@@ -82,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// - Initializing UITabBar
     private func initTabBar() {
-        UITabBar.appearance().tintColor = UIColor(named: "Color4")
+        UITabBar.appearance().tintColor = UIColor(named: "UITabBar-tintColor")
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().isTranslucent = true

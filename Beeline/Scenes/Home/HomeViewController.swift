@@ -12,12 +12,15 @@ import UIKit
 
 protocol HomeViewController: class {
     var presenter: HomePresenter? { get set }
+
+    func display(_ state: HomeEntity.Activity.State)
 }
 
 class HomeViewControllerImpl: UIViewController {
     var presenter: HomePresenter?
 
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var activityButton: UIButton!
 
     private let locationManager: CLLocationManager = {
         let manager = CLLocationManager()
@@ -31,32 +34,28 @@ class HomeViewControllerImpl: UIViewController {
         setup()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        localize()
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    @IBAction func didTapStart(_ sender: Any) {
+        presenter?.presentNewActivity()
     }
 
     private func setup() {
-        let blurEffect = UIBlurEffect(style: .prominent) // here you can change blur style
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = tabBarController?.tabBar.bounds ?? CGRect(x: 0, y: view.frame.height - 64, width: view.frame.width, height: 64)
-        blurView.autoresizingMask = .flexibleWidth
-        tabBarController?.tabBar.insertSubview(blurView, at: 0)
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-    }
-
-    private func localize() {
     }
 }
 
 // MARK: - HomeViewController
 
 extension HomeViewControllerImpl: HomeViewController {
+    func display(_ state: HomeEntity.Activity.State) {
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: [.curveEaseInOut]) {
+                self.activityButton.setTitle(state.title, for: [])
+                self.activityButton.backgroundColor = state.color
+            } completion: { _ in
+            }
+        }
+    }
 }
 
 // MARK: - CLLocationManagerDelegate

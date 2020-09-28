@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewControllerImpl" customModule="Beeline" customModuleProvider="target">
             <connections>
+                <outlet property="activityButton" destination="pyZ-Dv-zC0" id="iaK-NA-KGh"/>
                 <outlet property="mapView" destination="asT-TE-aSs" id="1aS-WO-vnX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,12 +24,34 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asT-TE-aSs">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyZ-Dv-zC0">
+                    <rect key="frame" x="64" y="754" width="286" height="44"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oug-4C-hE3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="Start your activity">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapStart:" destination="-1" eventType="touchUpInside" id="pa4-jR-rhg"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="asT-TE-aSs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ANj-7A-NHJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="asT-TE-aSs" secondAttribute="trailing" id="H64-qp-VFs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pyZ-Dv-zC0" secondAttribute="trailing" constant="64" id="PRT-K8-WMu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pyZ-Dv-zC0" secondAttribute="bottom" constant="64" id="RrO-Cs-qXs"/>
+                <constraint firstItem="pyZ-Dv-zC0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="UZ3-5X-lIh"/>
                 <constraint firstItem="asT-TE-aSs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iiL-30-HPK"/>
                 <constraint firstAttribute="bottom" secondItem="asT-TE-aSs" secondAttribute="bottom" id="sZj-f5-XlD"/>
             </constraints>
@@ -38,6 +61,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

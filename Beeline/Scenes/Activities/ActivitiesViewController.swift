@@ -20,15 +20,7 @@ class ActivitiesViewControllerImpl: UIViewController {
         setup()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        localize()
-    }
-    
     private func setup() {
-    }
-    
-    private func localize() {
     }
 }
 
@@ -36,4 +28,3 @@ class ActivitiesViewControllerImpl: UIViewController {
 
 extension ActivitiesViewControllerImpl: ActivitiesViewController {
 }
-

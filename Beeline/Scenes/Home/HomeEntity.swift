@@ -9,4 +9,10 @@
 import UIKit
 
 struct HomeEntity {
+    struct Activity {
+        struct State {
+            let color: UIColor
+            let title: String
+        }
+    }
 }
