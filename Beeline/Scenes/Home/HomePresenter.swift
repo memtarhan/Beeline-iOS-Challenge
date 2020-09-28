@@ -6,6 +6,7 @@
 //  Copyright © 2020 Mehmet Tarhan. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 protocol HomePresenter: class {
@@ -15,6 +16,7 @@ protocol HomePresenter: class {
 
     func present()
     func presentNewActivity()
+    func presentLocationUpdated(_ location: CLLocation)
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -30,9 +32,30 @@ class HomePresenterImpl: HomePresenter {
     func presentNewActivity() {
         hasStartedActivity = !hasStartedActivity
         let color: UIColor = hasStartedActivity ? .systemRed : .systemGreen
-        let title: String = hasStartedActivity ? "Start your activity" : "Stop your activity"
+        let title: String = hasStartedActivity ? "Stop your activity" : "Start your activity"
 
-        let state = HomeEntity.Activity.State(color: color, title: title)
+        let state = HomeEntity.Activity.State(color: color, title: title, shouldUpdateLocation: hasStartedActivity)
         view?.display(state)
+
+        if hasStartedActivity {
+            interactor?.currentActivity = ActivityModel()
+            interactor?.currentActivity?.startTime = Date()
+
+        } else {
+            interactor?.currentActivity?.finishTime = Date()
+            interactor?.save()
+            interactor?.currentActivity = nil
+        }
+    }
+
+    func presentLocationUpdated(_ location: CLLocation) {
+        let tracking = Tracking(timestamp: Date().timeIntervalSince1970, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, altitude: location.altitude)
+        if let interactor = interactor,
+            let activity = interactor.currentActivity,
+            activity.trackingData!.isEmpty {
+            view?.display(HomeEntity.Activity.Annotation(location: location.coordinate, title: "Start"))
+        }
+
+        interactor?.currentActivity?.trackingData?.append(tracking)
     }
 }

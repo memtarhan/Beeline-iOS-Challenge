@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
 struct HomeEntity {
     struct Activity {
         struct State {
             let color: UIColor
+            let title: String
+            let shouldUpdateLocation: Bool
+        }
+        
+        struct Annotation {
+            let location: CLLocationCoordinate2D
             let title: String
         }
     }

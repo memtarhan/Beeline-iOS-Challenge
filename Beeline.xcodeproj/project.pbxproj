@@ -35,6 +35,9 @@
 		DBBD00AE251631A600074789 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00AD251631A600074789 /* ViewControllerFactory.swift */; };
 		DBBD00BF2516367C00074789 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00BE2516367C00074789 /* CardView.swift */; };
 		DBBD00C42516383200074789 /* CardBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD00C32516383200074789 /* CardBlurView.swift */; };
+		DBE378382521F00400CFF1F2 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE378372521F00400CFF1F2 /* ActivityModel.swift */; };
+		DBE3783D2521F19300CFF1F2 /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3783C2521F19300CFF1F2 /* DLog.swift */; };
+		DBE3784B2521F91A00CFF1F2 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3784A2521F91900CFF1F2 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		DBBD00AD251631A600074789 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		DBBD00BE2516367C00074789 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DBBD00C32516383200074789 /* CardBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlurView.swift; sourceTree = "<group>"; };
+		DBE378372521F00400CFF1F2 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		DBE3783C2521F19300CFF1F2 /* DLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLog.swift; sourceTree = "<group>"; };
+		DBE3784A2521F91900CFF1F2 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		EBBE5C1CF402E3E775A73905 /* Pods_Beeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F067553B626B713FAE2FB857 /* Pods_Beeline_BeelineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beeline_BeelineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +195,7 @@
 			children = (
 				DBBD00842516310500074789 /* DI */,
 				DBBD0083251630FB00074789 /* Scenes */,
+				DBE378362521EFF500CFF1F2 /* Models */,
 				DBBD00AC2516319100074789 /* Common */,
 				DB4EF4D524FEF1790041EDEF /* AppDelegate.swift */,
 				DB4EF4DE24FEF17D0041EDEF /* Assets.xcassets */,
@@ -271,8 +278,18 @@
 				DBBD00AD251631A600074789 /* ViewControllerFactory.swift */,
 				DBBD00BE2516367C00074789 /* CardView.swift */,
 				DBBD00C32516383200074789 /* CardBlurView.swift */,
+				DBE3783C2521F19300CFF1F2 /* DLog.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DBE378362521EFF500CFF1F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBE378372521F00400CFF1F2 /* ActivityModel.swift */,
+				DBE3784A2521F91900CFF1F2 /* Annotation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,12 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE378382521F00400CFF1F2 /* ActivityModel.swift in Sources */,
 				DB4B51C4251A14EC00BA289D /* ActivitiesService.swift in Sources */,
 				DBBD00912516312000074789 /* HomeEntity.swift in Sources */,
+				DBE3783D2521F19300CFF1F2 /* DLog.swift in Sources */,
 				DBBD00992516314400074789 /* HomeAssembly.swift in Sources */,
 				DB4EF4D624FEF1790041EDEF /* AppDelegate.swift in Sources */,
 				DB4B51C9251A14FE00BA289D /* ActivitiesAssembly.swift in Sources */,
 				DBBD00C42516383200074789 /* CardBlurView.swift in Sources */,
+				DBE3784B2521F91A00CFF1F2 /* Annotation.swift in Sources */,
 				DBBD008D2516312000074789 /* HomePresenter.swift in Sources */,
 				DB4B51C1251A14EC00BA289D /* ActivitiesInteractor.swift in Sources */,
 				DB4B51BF251A14EC00BA289D /* ActivitiesRouter.swift in Sources */,
